@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Geometry Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      text-align: center;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+    input[type="text"], button {
+      padding: 10px;
+      margin-bottom: 10px;
+      width: calc(100% - 22px);
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #686666;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Geometry Calculator</h1>
+
+  <div class="container">
+    <div>
+      <label for="sidea">Side A:</label>
+      <input type="text" id="sidea" placeholder="Enter side A">
+      <label for="sideb">Side B:</label>
+      <input type="text" id="sideb" placeholder="Enter side B">
+      <button onclick="calculate()">Calculate Hypotenuse</button>
+      <p id="resultHypotenuse" style="display: none;"></p>
+    </div>
+  
+    <hr>
+  
+    <div>
+      <label for="meter">Meters:</label>
+      <input type="text" id="meter" placeholder="Enter meters">
+      <button onclick="convert()">Convert to Centimeters</button>
+      <p id="resultConversion" style="display: none;"></p>
+    </div>
+  </div>
+  
+ <footer>
+  Made by FreqZY
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
